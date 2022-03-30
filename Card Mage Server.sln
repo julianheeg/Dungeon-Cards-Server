@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card Mage Server", "Card Mage Server\Card Mage Server.csproj", "{F23C2E03-9F0F-422F-AD5B-4175BC551D86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardMageServer.Test", "CardMageServer.Test\CardMageServer.Test.csproj", "{FE8EB56D-4FFC-4567-9B96-99C01B478708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F23C2E03-9F0F-422F-AD5B-4175BC551D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23C2E03-9F0F-422F-AD5B-4175BC551D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23C2E03-9F0F-422F-AD5B-4175BC551D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23C2E03-9F0F-422F-AD5B-4175BC551D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE8EB56D-4FFC-4567-9B96-99C01B478708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8EB56D-4FFC-4567-9B96-99C01B478708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8EB56D-4FFC-4567-9B96-99C01B478708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8EB56D-4FFC-4567-9B96-99C01B478708}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

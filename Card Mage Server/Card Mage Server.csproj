@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F23C2E03-9F0F-422F-AD5B-4175BC551D86}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Card_Mage_Server</RootNamespace>
+    <AssemblyName>Card Mage Server</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExecutionThread.cs" />
+    <Compile Include="Game Files\Cards\Card.cs" />
+    <Compile Include="Game Files\Cards\CardFieldAndHand.cs" />
+    <Compile Include="Game Files\Cards\CardDatabase.cs" />
+    <Compile Include="Game Files\Cards\CardPile.cs" />
+    <Compile Include="Game Files\Cards\CardTypes\MonsterCard.cs" />
+    <Compile Include="Game Files\Cards\CardTypes\CardTemplates.cs" />
+    <Compile Include="Game Files\Cards\CardTypes\Type.cs" />
+    <Compile Include="Game Files\Cards\Effect.cs" />
+    <Compile Include="Game Files\Cards\Hand.cs" />
+    <Compile Include="Game Files\GameClassMessaging.cs" />
+    <Compile Include="Game Files\GameDataParser.cs" />
+    <Compile Include="Game Files\MapFolder\GridPosition.cs" />
+    <Compile Include="Game Files\MapFolder\HexDirection.cs" />
+    <Compile Include="Game Files\MapFolder\TileType.cs" />
+    <Compile Include="Game Files\Monsters\FogOfWar.cs" />
+    <Compile Include="Game Files\Monsters\Monster.cs" />
+    <Compile Include="Game Files\MapFolder\MonsterManager.cs" />
+    <Compile Include="Utilities\ArrayExtension.cs" />
+    <Compile Include="Utilities\ConsoleExt.cs" />
+    <Compile Include="PingThread.cs" />
+    <Compile Include="Player\CardCollection.cs" />
+    <Compile Include="CommServerToClient.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Player\Deck.cs" />
+    <Compile Include="Game Files\Maze Generation\DFSGenerator.cs" />
+    <Compile Include="Game Files\Game.cs" />
+    <Compile Include="Game Files\Maze Generation\GrowingTreeGenerator.cs" />
+    <Compile Include="Game Files\MapFolder\Map.cs" />
+    <Compile Include="Game Files\Maze Generation\MazeGenerator.cs" />
+    <Compile Include="Game Files\Maze Generation\PlayerBase.cs" />
+    <Compile Include="Game Files\Maze Generation\PlayerBase1.cs" />
+    <Compile Include="Game Files\Maze Generation\ThreeMazeGenerator.cs" />
+    <Compile Include="Lobby.cs" />
+    <Compile Include="LoginAndDatabase.cs" />
+    <Compile Include="Player\Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ListExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
